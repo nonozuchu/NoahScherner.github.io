@@ -3,88 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Scherner | Artist</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <title>Noah Scherner | Visual Artist</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap">
     <style>
-        :root { --bg: #ffffff; --text: #000000; --dim: #707070; }
-        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        :root { --white: #ffffff; --black: #1a1a1a; --gray: #888888; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); line-height: 1.6; }
         
-        /* Layout */
-        #container { display: flex; flex-direction: row; min-height: 100vh; }
-        
-        /* Sidebar */
-        aside { width: 250px; padding: 40px; position: fixed; height: 100vh; border-right: 1px solid #f0f0f0; }
-        h1 { font-size: 18px; font-weight: 400; margin-bottom: 30px; letter-spacing: 1px; }
-        nav ul { list-style: none; padding: 0; }
-        nav li { margin-bottom: 10px; }
-        nav a { text-decoration: none; color: var(--dim); font-size: 14px; transition: 0.2s; }
-        nav a:hover, nav a.active { color: var(--text); }
+        /* Sidebar Fixa */
+        aside { width: 280px; position: fixed; height: 100vh; padding: 60px 40px; border-right: 1px solid #f0f0f0; display: flex; flex-direction: column; justify-content: space-between; }
+        h1 { font-size: 18px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px; }
+        nav ul { list-style: none; }
+        nav li { margin-bottom: 15px; }
+        nav a { text-decoration: none; color: var(--gray); font-size: 13px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
+        nav a:hover, nav a.active { color: var(--black); }
 
-        /* Main Content */
-        main { margin-left: 330px; padding: 40px; width: 100%; }
-        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 40px; }
-        .artwork { margin-bottom: 60px; }
-        .artwork img { width: 100%; height: auto; display: block; filter: grayscale(5%) contrast(105%); }
-        .info { margin-top: 15px; font-size: 13px; color: var(--dim); }
-        .info b { color: var(--text); font-weight: 400; font-style: italic; }
+        /* Conteúdo */
+        main { margin-left: 280px; padding: 60px; max-width: 1200px; }
+        section { margin-bottom: 120px; scroll-margin-top: 60px; }
+        h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; color: var(--black); border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        
+        /* Estilo para o Embed do Artwork Archive */
+        .inventory-container { width: 100%; min-height: 600px; }
+
+        /* Texto de Bio/Statement */
+        .text-content { max-width: 700px; font-size: 15px; color: var(--black); text-align: justify; }
+        .text-content p { margin-bottom: 20px; }
 
         /* Mobile */
         @media (max-width: 768px) {
-            #container { flex-direction: column; }
-            aside { width: 100%; position: relative; height: auto; border-right: none; padding: 20px; }
-            main { margin-left: 0; padding: 20px; }
-            .gallery { grid-template-columns: 1fr; }
+            aside { width: 100%; height: auto; position: relative; border-right: none; padding: 30px; }
+            main { margin-left: 0; padding: 30px; }
         }
     </style>
 </head>
 <body>
 
-<div id="container">
-    <aside>
-        <h1>NOAH SCHERNER</h1>
+<aside>
+    <div>
+        <h1>Noah Scherner</h1>
         <nav>
             <ul>
-                <li><a href="#" class="active">Selected Works</a></li>
-                <li><a href="#series-fumodromo">Fumódromo</a></li>
-                <li><a href="#series-mamiferos">Mamíferos</a></li>
-                <li><a href="#info">Information / CV</a></li>
+                <li><a href="#works">Selected Works</a></li>
+                <li><a href="#about">Information</a></li>
+                <li><a href="https://instagram.com/noah_scherner" target="_blank">Instagram</a></li>
             </ul>
         </nav>
-        <div class="info" style="margin-top: 50px;">
-            <p>Represented by:<br>Cana Galeria (RJ)</p>
-            <p><a href="mailto:noah.scherner6@gmail.com" style="text-decoration: underline;">Contact</a></p>
+    </div>
+    
+    <div class="footer-info">
+        <p style="font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px;">
+            Represented by<br>
+            <span style="color: var(--black);">Cana Galeria (RJ)</span>
+        </p>
+        <p style="font-size: 11px; margin-top: 20px;">
+            <a href="mailto:noah.scherner6@gmail.com" style="color: var(--gray); text-decoration: none;">noah.scherner6@gmail.com</a>
+        </p>
+    </div>
+</aside>
+
+<main>
+    <section id="works">
+        <h2>Selected Works</h2>
+        <div class="inventory-container">
+            <p style="color: var(--gray); font-style: italic;">[Integrando Inventário via Artwork Archive...]</p>
+            </div>
+    </section>
+
+    <section id="about">
+        <h2>Information</h2>
+        <div class="text-content">
+            <p><strong>Noah Scherner (b. 2004)</strong> is a Brazilian visual artist currently based in Rio de Janeiro. Born into a lineage of architects and psychoanalysts, his practice is a continuous dialogue between the structural rigor of form and the fluid manifestations of the subconscious.</p>
+            
+            <p>His research, characterized by the "Cerrado-Futurismo" and surrealist influences, operates as an act of surrender to intuition and resistance to the didactic. Scherner treats oil paint as a living partner—respecting its time, its chemical maturation, and the inherent unpredictability of the medium. His works often explore the ambiguity of signs, where objects and figures exist in a state of constant transformation.</p>
+
+            <p>Currently a student at the <strong>Escola de Artes Visuais do Parque Lage</strong>, his work has been exhibited in institutions and galleries across Brazil and Spain, including recent shows at Cana Galeria. He is currently preparing for international mobility within the European Union, focusing on the technical traditions of painting and sculpture.</p>
+            
+            <p style="font-size: 13px; color: var(--gray);"><em>Rio de Janeiro, 2026.</em></p>
         </div>
-    </aside>
+    </section>
+</main>
 
-    <main>
-        <div class="gallery">
-            <div class="artwork" id="series-fumodromo">
-                <img src="https://via.placeholder.com/800x600" alt="Obra Noah Scherner">
-                <div class="info">
-                    <b>Fumódromo: Bruna</b>, 2024<br>
-                    Oil on canvas<br>
-                    $30 \times 20$ cm
-                </div>
-            </div>
-
-            <div class="artwork" id="series-mamiferos">
-                <img src="https://via.placeholder.com/800x1000" alt="Obra Noah Scherner">
-                <div class="info">
-                    <b>Série Mamíferos</b>, 2024<br>
-                    Dry pastel and acrylic varnish on paper<br>
-                    $60 \times 42$ cm
-                </div>
-            </div>
-            </div>
-
-        <section id="info" style="margin-top: 100px; max-width: 600px;">
-            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
-            <p>Noah Scherner (b. 2004) is a Brazilian visual artist. His practice explores the intersection between technology, tradition, and the subconscious, with a focus on portraiture and landscape.</p>
-            <p>Currently studying at EAV Parque Lage, Rio de Janeiro.</p>
-        </section>
-    </main>
-</div>
+<script>
+    // Script simples para marcar o link ativo na navegação
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 100) { current = section.getAttribute('id'); }
+        });
+        document.querySelectorAll('nav a').forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) { a.classList.add('active'); }
+        });
+    });
+</script>
 
 </body>
 </html>
