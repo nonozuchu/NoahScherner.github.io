@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noah Scherner | Artist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg: #ffffff; --text: #000000; --dim: #707070; }
+        body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 0; line-height: 1.6; }
+        
+        /* Layout */
+        #container { display: flex; flex-direction: row; min-height: 100vh; }
+        
+        /* Sidebar */
+        aside { width: 250px; padding: 40px; position: fixed; height: 100vh; border-right: 1px solid #f0f0f0; }
+        h1 { font-size: 18px; font-weight: 400; margin-bottom: 30px; letter-spacing: 1px; }
+        nav ul { list-style: none; padding: 0; }
+        nav li { margin-bottom: 10px; }
+        nav a { text-decoration: none; color: var(--dim); font-size: 14px; transition: 0.2s; }
+        nav a:hover, nav a.active { color: var(--text); }
+
+        /* Main Content */
+        main { margin-left: 330px; padding: 40px; width: 100%; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 40px; }
+        .artwork { margin-bottom: 60px; }
+        .artwork img { width: 100%; height: auto; display: block; filter: grayscale(5%) contrast(105%); }
+        .info { margin-top: 15px; font-size: 13px; color: var(--dim); }
+        .info b { color: var(--text); font-weight: 400; font-style: italic; }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            #container { flex-direction: column; }
+            aside { width: 100%; position: relative; height: auto; border-right: none; padding: 20px; }
+            main { margin-left: 0; padding: 20px; }
+            .gallery { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <aside>
+        <h1>NOAH SCHERNER</h1>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Selected Works</a></li>
+                <li><a href="#series-fumodromo">Fumódromo</a></li>
+                <li><a href="#series-mamiferos">Mamíferos</a></li>
+                <li><a href="#info">Information / CV</a></li>
+            </ul>
+        </nav>
+        <div class="info" style="margin-top: 50px;">
+            <p>Represented by:<br>Cana Galeria (RJ)</p>
+            <p><a href="mailto:noah.scherner6@gmail.com" style="text-decoration: underline;">Contact</a></p>
+        </div>
+    </aside>
+
+    <main>
+        <div class="gallery">
+            <div class="artwork" id="series-fumodromo">
+                <img src="https://via.placeholder.com/800x600" alt="Obra Noah Scherner">
+                <div class="info">
+                    <b>Fumódromo: Bruna</b>, 2024<br>
+                    Oil on canvas<br>
+                    $30 \times 20$ cm
+                </div>
+            </div>
+
+            <div class="artwork" id="series-mamiferos">
+                <img src="https://via.placeholder.com/800x1000" alt="Obra Noah Scherner">
+                <div class="info">
+                    <b>Série Mamíferos</b>, 2024<br>
+                    Dry pastel and acrylic varnish on paper<br>
+                    $60 \times 42$ cm
+                </div>
+            </div>
+            </div>
+
+        <section id="info" style="margin-top: 100px; max-width: 600px;">
+            <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 40px;">
+            <p>Noah Scherner (b. 2004) is a Brazilian visual artist. His practice explores the intersection between technology, tradition, and the subconscious, with a focus on portraiture and landscape.</p>
+            <p>Currently studying at EAV Parque Lage, Rio de Janeiro.</p>
+        </section>
+    </main>
+</div>
+
+</body>
+</html>
