@@ -1,100 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noah Scherner | Artist</title>
+    <title>Noah Scherner | Visual Artist</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap">
     <style>
-        :root { --white: #ffffff; --black: #000000; --gray: #999; --bg-alt: #fafafa; }
+        :root { --white: #ffffff; --black: #1a1a1a; --gray: #888888; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); line-height: 1.5; -webkit-font-smoothing: antialiased; }
-
-        /* Sidebar */
-        aside { width: 300px; position: fixed; height: 100vh; padding: 60px 40px; border-right: 1px solid #eee; display: flex; flex-direction: column; }
-        h1 { font-size: 14px; font-weight: 400; letter-spacing: 3px; text-transform: uppercase; margin-bottom: 50px; }
-        nav { flex-grow: 1; }
+        body { font-family: 'Inter', sans-serif; background: var(--white); color: var(--black); line-height: 1.6; }
+        
+        /* Sidebar Fixa */
+        aside { width: 280px; position: fixed; height: 100vh; padding: 60px 40px; border-right: 1px solid #f0f0f0; display: flex; flex-direction: column; justify-content: space-between; }
+        h1 { font-size: 18px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px; }
         nav ul { list-style: none; }
-        nav li { margin-bottom: 12px; }
-        nav a { text-decoration: none; color: var(--gray); font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px; transition: 0.3s; }
+        nav li { margin-bottom: 15px; }
+        nav a { text-decoration: none; color: var(--gray); font-size: 13px; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; }
         nav a:hover, nav a.active { color: var(--black); }
 
-        .sidebar-footer { font-size: 10px; color: var(--gray); letter-spacing: 1px; line-height: 1.8; }
-        .sidebar-footer b { color: var(--black); font-weight: 400; }
-
-        /* Main Content */
-        main { margin-left: 300px; padding: 60px 100px; }
-        section { margin-bottom: 150px; }
+        /* Conteúdo */
+        main { margin-left: 280px; padding: 60px; max-width: 1200px; }
+        section { margin-bottom: 120px; scroll-margin-top: 60px; }
+        h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 30px; color: var(--black); border-bottom: 1px solid #eee; padding-bottom: 10px; }
         
-        .gallery { display: grid; grid-template-columns: 1fr; gap: 100px; }
-        .artwork { width: 100%; max-width: 800px; }
-        .artwork img { width: 100%; height: auto; display: block; margin-bottom: 25px; }
-        .artwork-info { font-size: 12px; color: var(--gray); display: flex; justify-content: space-between; border-top: 1px solid #f0f0f0; padding-top: 15px; }
-        .artwork-info b { color: var(--black); font-style: italic; font-weight: 400; }
+        /* Estilo para o Embed do Artwork Archive */
+        .inventory-container { width: 100%; min-height: 600px; }
 
-        .about-text { max-width: 600px; font-size: 14px; color: var(--black); text-align: justify; }
-        .about-text p { margin-bottom: 25px; }
+        /* Texto de Bio/Statement */
+        .text-content { max-width: 700px; font-size: 15px; color: var(--black); text-align: justify; }
+        .text-content p { margin-bottom: 20px; }
 
-        .btn-archive { display: inline-block; margin-top: 40px; padding: 12px 20px; border: 1px solid #000; text-decoration: none; color: #000; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
-        .btn-archive:hover { background: #000; color: #fff; }
-
-        @media (max-width: 1024px) {
-            aside { width: 100%; position: relative; height: auto; padding: 40px; border-right: none; border-bottom: 1px solid #eee; }
-            main { margin-left: 0; padding: 40px; }
+        /* Mobile */
+        @media (max-width: 768px) {
+            aside { width: 100%; height: auto; position: relative; border-right: none; padding: 30px; }
+            main { margin-left: 0; padding: 30px; }
         }
     </style>
 </head>
 <body>
 
 <aside>
-    <h1>Noah Scherner</h1>
-    <nav>
-        <ul>
-            <li><a href="#works" class="active">Selected Works</a></li>
-            <li><a href="#about">Information</a></li>
-            <li><a href="mailto:noah.scherner6@gmail.com">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="sidebar-footer">
-        Represented by<br>
-        <b>Cana Galeria (RJ)</b><br><br>
-        © 2026 Rio de Janeiro / EU
+    <div>
+        <h1>Noah Scherner</h1>
+        <nav>
+            <ul>
+                <li><a href="#works">Selected Works</a></li>
+                <li><a href="#about">Information</a></li>
+                <li><a href="https://instagram.com/noah_scherner" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div class="footer-info">
+        <p style="font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: 1px;">
+            Represented by<br>
+            <span style="color: var(--black);">Cana Galeria (RJ)</span>
+        </p>
+        <p style="font-size: 11px; margin-top: 20px;">
+            <a href="mailto:noah.scherner6@gmail.com" style="color: var(--gray); text-decoration: none;">noah.scherner6@gmail.com</a>
+        </p>
     </div>
 </aside>
 
 <main>
     <section id="works">
-        <div class="gallery">
-            <div class="artwork">
-                <img src="img/cerrado-futurista.webp" alt="Os cerrado-futuristas">
-                <div class="artwork-info">
-                    <span><b>Os cerrado-futuristas sequestram a relógiocomotiva</b>, 2026</span>
-                    <span>Óleo sobre tela, 100 x 100 cm</span>
-                </div>
+        <h2>Selected Works</h2>
+        <div class="inventory-container">
+            <p style="color: var(--gray); font-style: italic;">[Integrando Inventário via Artwork Archive...]</p>
             </div>
-
-            <div class="artwork">
-                <img src="img/3-irmas.webp" alt="3 irmãs">
-                <div class="artwork-info">
-                    <span><b>3 irmãs</b>, 2026</span>
-                    <span>Óleo sobre tela, 60 x 90 cm</span>
-                </div>
-            </div>
-        </div>
-
-        <a href="https://www.artworkarchive.com/profile/seu-link-publico" target="_blank" class="btn-archive">
-            Ver Inventário Completo (Online Catalog)
-        </a>
     </section>
 
     <section id="about">
-        <div class="about-text">
-            <p>Noah Scherner (b. 2004) é um artista visual brasileiro focado na pesquisa de "Cerrado-Futurismo" e nas manifestações do inconsciente. Sua prática utiliza a tinta a óleo como um organismo vivo, respeitando processos de maturação e a imprevisibilidade da matéria.</p>
-            <p>Atualmente sediado no Rio de Janeiro e representado pela Cana Galeria, Scherner desenvolve um corpo de trabalho que transita entre o rigor formal e o automatismo psíquico. Sua formação integra influências da arquitetura e da psicanálise, refletidas na estrutura e na ambivalência de suas imagens.</p>
-            <p><em>Estudante da EAV Parque Lage. Preparando transição para mobilidade acadêmica na União Europeia (Itália/França).</em></p>
+        <h2>Information</h2>
+        <div class="text-content">
+            <p><strong>Noah Scherner (b. 2004)</strong> is a Brazilian visual artist currently based in Rio de Janeiro. Born into a lineage of architects and psychoanalysts, his practice is a continuous dialogue between the structural rigor of form and the fluid manifestations of the subconscious.</p>
+            
+            <p>His research, characterized by the "Cerrado-Futurismo" and surrealist influences, operates as an act of surrender to intuition and resistance to the didactic. Scherner treats oil paint as a living partner—respecting its time, its chemical maturation, and the inherent unpredictability of the medium. His works often explore the ambiguity of signs, where objects and figures exist in a state of constant transformation.</p>
+
+            <p>Currently a student at the <strong>Escola de Artes Visuais do Parque Lage</strong>, his work has been exhibited in institutions and galleries across Brazil and Spain, including recent shows at Cana Galeria. He is currently preparing for international mobility within the European Union, focusing on the technical traditions of painting and sculpture.</p>
+            
+            <p style="font-size: 13px; color: var(--gray);"><em>Rio de Janeiro, 2026.</em></p>
         </div>
     </section>
 </main>
+
+<script>
+    // Script simples para marcar o link ativo na navegação
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const sections = document.querySelectorAll('section');
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 100) { current = section.getAttribute('id'); }
+        });
+        document.querySelectorAll('nav a').forEach(a => {
+            a.classList.remove('active');
+            if (a.getAttribute('href').includes(current)) { a.classList.add('active'); }
+        });
+    });
+</script>
 
 </body>
 </html>
