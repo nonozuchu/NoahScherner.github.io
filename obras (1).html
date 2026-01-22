@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selected Works | Noah Scherner</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="index.html">Noah Scherner</a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="obras.html" class="active">Selected works</a></li>
+            <li><a href="cv.html">About</a></li>
+            <li><a href="contato.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="carousel-container">
+        <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">&#8249;</button>
+
+        <div class="carousel-slide active">
+            <img src="assets/obras/posidon.jpg" alt="Posídon">
+            <p class="carousel-caption">
+                <em>Posídon</em>, 2025. Oil on canvas — 120 x 80 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/tres-irmas.jpg" alt="3 Irmãs">
+            <p class="carousel-caption">
+                <em>3 Irmãs</em>, 2025. Oil on canvas — 90 x 60 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/agape.jpg" alt="Ágape">
+            <p class="carousel-caption">
+                <em>Ágape</em>, 2025. Oil on canvas — 30 x 20 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/afano.jpg" alt="Afano">
+            <p class="carousel-caption">
+                <em>Afano</em>, 2025. Oil on canvas — 30 x 30 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/cortejo.jpg" alt="Cortejo">
+            <p class="carousel-caption">
+                <em>Cortejo</em>, 2025. Oil on canvas — 30 x 20 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/epopeia.jpg" alt="Epopeia">
+            <p class="carousel-caption">
+                <em>Epopeia</em>, 2025. Oil on canvas — 20 x 30 cm
+            </p>
+        </div>
+
+        <div class="carousel-slide">
+            <img src="assets/obras/obra-4.jpg" alt="Sem título">
+            <p class="carousel-caption">
+                <em>Untitled</em>, 2025. Oil on canvas
+            </p>
+        </div>
+
+        <button class="carousel-nav carousel-next" onclick="changeSlide(1)">&#8250;</button>
+    </div>
+</main>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach(slide => slide.classList.remove('active'));
+
+    if (index >= totalSlides) {
+        currentSlide = 0;
+    } else if (index < 0) {
+        currentSlide = totalSlides - 1;
+    } else {
+        currentSlide = index;
+    }
+
+    slides[currentSlide].classList.add('active');
+}
+
+function changeSlide(direction) {
+    showSlide(currentSlide + direction);
+}
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') {
+        changeSlide(-1);
+    } else if (e.key === 'ArrowRight') {
+        changeSlide(1);
+    }
+});
+</script>
+
+</body>
+</html>
