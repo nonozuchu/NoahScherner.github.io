@@ -15,9 +15,14 @@
     </div>
     <nav>
         <ul>
-            <li><a href="obras.html">Selected works</a></li>
-            <li><a href="cv.html">About</a></li>
-            <li><a href="contato.html">Contact</a></li>
+            <li class="lang-toggle-header">
+                <button class="active" data-lang="pt-br">PT</button>
+                <span class="lang-separator">/</span>
+                <button data-lang="en">EN</button>
+            </li>
+            <li><a href="obras.html"><span lang="pt-br">Trabalhos selecionados</span><span lang="en">Selected works</span></a></li>
+            <li><a href="cv.html"><span lang="pt-br">Sobre</span><span lang="en">About</span></a></li>
+            <li><a href="contato.html"><span lang="pt-br">Contato</span><span lang="en">Contact</span></a></li>
         </ul>
     </nav>
 </header>
@@ -27,6 +32,38 @@
         <img src="assets/profile.jpg" alt="Noah Scherner, artista visual">
     </div>
 </main>
+
+<script>
+// Global language toggle functionality with localStorage persistence
+(function() {
+    const savedLang = localStorage.getItem('preferredLang') || 'pt-br';
+    document.body.dataset.lang = savedLang;
+
+    // Update active button state on load
+    document.querySelectorAll('.lang-toggle-header button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === savedLang);
+    });
+
+    // Add click handlers
+    document.querySelectorAll('.lang-toggle-header button').forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+
+            // Update active button
+            document.querySelectorAll('.lang-toggle-header button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            // Update body data attribute to toggle language display
+            document.body.dataset.lang = lang;
+
+            // Persist language preference
+            localStorage.setItem('preferredLang', lang);
+        });
+    });
+})();
+</script>
 
 </body>
 </html>
