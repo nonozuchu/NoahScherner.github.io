@@ -1,0 +1,84 @@
+{
+  "artworks": [
+    {
+      "id": "posidon",
+      "title": "Posidon",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "120 x 80 cm",
+      "image": "assets/obras/posidon.jpg"
+    },
+    {
+      "id": "tres-irmas",
+      "title": "3 Irmas",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "90 x 60 cm",
+      "image": "assets/obras/tres-irmas.jpg"
+    },
+    {
+      "id": "agape",
+      "title": "Agape",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "30 x 20 cm",
+      "image": "assets/obras/agape.jpg"
+    },
+    {
+      "id": "afano",
+      "title": "Afano",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "30 x 30 cm",
+      "image": "assets/obras/afano.jpg"
+    },
+    {
+      "id": "cortejo",
+      "title": "Cortejo",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "30 x 20 cm",
+      "image": "assets/obras/cortejo.jpg"
+    },
+    {
+      "id": "epopeia",
+      "title": "Epopeia",
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": "20 x 30 cm",
+      "image": "assets/obras/epopeia.jpg"
+    },
+    {
+      "id": "obra-4",
+      "title": {
+        "pt": "Sem titulo",
+        "en": "Untitled"
+      },
+      "year": 2025,
+      "medium": {
+        "pt": "Oleo sobre tela",
+        "en": "Oil on canvas"
+      },
+      "dimensions": null,
+      "image": "assets/obras/obra-4.jpg"
+    }
+  ]
+}

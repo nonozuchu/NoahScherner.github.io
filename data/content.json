@@ -1,0 +1,259 @@
+{
+  "artist": {
+    "name": "Noah Scherner",
+    "birthYear": 2005,
+    "nationality": "Brazilian",
+    "currentCity": "Rio de Janeiro",
+    "country": "Brazil"
+  },
+
+  "contact": {
+    "email": "noah.scherner6@gmail.com",
+    "instagram": {
+      "handle": "@noah_scherner",
+      "url": "https://instagram.com/noah_scherner"
+    },
+    "gallery": {
+      "name": "Cana Galeria",
+      "city": "Rio de Janeiro",
+      "country": "BR"
+    }
+  },
+
+  "bio": {
+    "pt": [
+      "<strong>Noah Scherner</strong> (n. 2005) e um artista visual brasileiro. Criado em Uberlandia (MG), desenvolve e consolida sua pesquisa poetica no Rio de Janeiro desde 2024.",
+      "Sua pratica concentra-se na pintura a oleo, articulando elementos do expressionismo, surrealismo contemporaneo e psicanalise. E representado pela Cana Galeria (RJ).",
+      "Sua producao atual e desenvolvida na EAV Parque Lage (RJ). Possui formacao tecnica em pintura figurativa pelo Atelier Madrid (Espanha), New Masters Academy e Joules e Joules (SP)."
+    ],
+    "en": [
+      "<strong>Noah Scherner</strong> (b. 2005) is a Brazilian visual artist. Raised in Uberlandia (MG), he has been developing and consolidating his poetic research in Rio de Janeiro since 2024.",
+      "His practice focuses on oil painting, articulating elements of expressionism, contemporary surrealism, and psychoanalysis. He is represented by Cana Galeria (RJ).",
+      "His current production is developed at EAV Parque Lage (RJ). He holds technical training in figurative painting from Atelier Madrid (Spain), New Masters Academy, and Joules e Joules (SP)."
+    ]
+  },
+
+  "education": [
+    {
+      "period": "2024-presente",
+      "title": {
+        "pt": "Pratica de Arte Contemporanea e Orientacao Critica",
+        "en": "Contemporary Art Practice and Critical Guidance"
+      },
+      "institution": "EAV Parque Lage",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "period": "2024",
+      "title": {
+        "pt": "Arte Moderna e Pintura Abstrata",
+        "en": "Modern Art and Abstract Painting"
+      },
+      "institution": "MoMA - The Museum of Modern Art",
+      "city": "New York",
+      "note": "(Online)"
+    },
+    {
+      "period": "2024-2025",
+      "title": {
+        "pt": "Paletas Historicas e Historia da Arte Moderna",
+        "en": "Historical Palettes and Modern Art History"
+      },
+      "institution": "Joules e Joules",
+      "city": "Sao Paulo"
+    },
+    {
+      "period": "2023",
+      "title": {
+        "pt": "Curso de Verao de Pintura Hiper-realista (Arantzazu Martinez)",
+        "en": "Hyper-realism Painting Summer Course (Arantzazu Martinez)"
+      },
+      "institution": "Atelier Madrid",
+      "city": "Madrid"
+    },
+    {
+      "period": "2020-2022",
+      "title": {
+        "pt": "Fundamentos das Artes Classicas",
+        "en": "Classical Arts Fundamentals"
+      },
+      "institution": "New Masters Academy",
+      "note": "(Online)"
+    },
+    {
+      "period": "2018-2020",
+      "title": {
+        "pt": "Fundamentos de Desenho e Pintura",
+        "en": "Drawing and Painting Foundations"
+      },
+      "institution": "Atelie Particular (Alexandre Carvalho)",
+      "city": "Uberlandia"
+    }
+  ],
+
+  "exhibitions": [
+    {
+      "year": "2025",
+      "title": {
+        "pt": "Casa Caiana",
+        "en": "Casa Caiana"
+      },
+      "venue": "Cana Galeria",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2025",
+      "title": {
+        "pt": "Tudo que a terra ha de comer",
+        "en": "Everything the Earth Shall Consume"
+      },
+      "venue": "Cana Galeria",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2025",
+      "title": {
+        "pt": "Abraco coletivo #4",
+        "en": "Collective Embrace #4"
+      },
+      "venue": "Lanchonete Lanchonete",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2025",
+      "title": {
+        "pt": "Cana Galeria - Terceira Exposicao",
+        "en": "Cana Galeria - Third Exhibition"
+      },
+      "venue": "Cana Galeria",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2024",
+      "title": {
+        "pt": "Mata Mata",
+        "en": "Mata Mata"
+      },
+      "venue": "Parque Lage",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2024",
+      "title": {
+        "pt": "A Espera",
+        "en": "The Wait"
+      },
+      "venue": "Cana Galeria",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2024",
+      "title": {
+        "pt": "O Primeiro",
+        "en": "The First"
+      },
+      "venue": "Cana Galeria",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2024",
+      "title": {
+        "pt": "Ocupacao Parque Lage",
+        "en": "Parque Lage Occupation"
+      },
+      "venue": "",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2024",
+      "title": {
+        "pt": "Como Sera o Amanha",
+        "en": "How Tomorrow Will Be"
+      },
+      "venue": "Atelie 31",
+      "city": "Rio de Janeiro"
+    },
+    {
+      "year": "2023",
+      "title": {
+        "pt": "Cidade Antropofagica",
+        "en": "Anthropophagic City"
+      },
+      "type": {
+        "pt": "Exposicao Individual",
+        "en": "Solo Exhibition"
+      },
+      "city": "Uberlandia"
+    },
+    {
+      "year": "2023-2024",
+      "title": {
+        "pt": "Revenant",
+        "en": "Revenant"
+      },
+      "type": {
+        "pt": "Exposicao Coletiva",
+        "en": "Group Exhibition"
+      },
+      "city": {
+        "pt": "Madri, Espanha",
+        "en": "Madrid, Spain"
+      }
+    },
+    {
+      "year": "2023",
+      "title": {
+        "pt": "Make It Urban Fest",
+        "en": "Make It Urban Fest"
+      },
+      "city": {
+        "pt": "Madri, Espanha",
+        "en": "Madrid, Spain"
+      }
+    },
+    {
+      "year": "2023",
+      "title": {
+        "pt": "SobExtimidades",
+        "en": "SobExtimidades"
+      },
+      "venue": {
+        "pt": "Galeria IT",
+        "en": "IT Gallery"
+      },
+      "city": {
+        "pt": "Madri, Espanha",
+        "en": "Madrid, Spain"
+      }
+    },
+    {
+      "year": "2023",
+      "title": {
+        "pt": "SurRealismo",
+        "en": "SurRealismo"
+      },
+      "venue": {
+        "pt": "Centro Cultural Manuel Entero",
+        "en": "Manuel Entero Cultural Center"
+      },
+      "city": {
+        "pt": "Colmenarejo, Espanha",
+        "en": "Colmenarejo, Spain"
+      }
+    },
+    {
+      "year": "2021",
+      "title": {
+        "pt": "Primeira Feira Cerrado Futurista",
+        "en": "First Cerrado-Futurism Fair"
+      },
+      "venue": "Ocupa",
+      "city": "Uberlandia"
+    }
+  ],
+
+  "representation": {
+    "gallery": "Cana Galeria",
+    "city": "Rio de Janeiro"
+  }
+}

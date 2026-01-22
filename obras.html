@@ -15,9 +15,14 @@
     </div>
     <nav>
         <ul>
-            <li><a href="obras.html" class="active">Selected works</a></li>
-            <li><a href="cv.html">About</a></li>
-            <li><a href="contato.html">Contact</a></li>
+            <li class="lang-toggle-header">
+                <button class="active" data-lang="pt-br">PT</button>
+                <span class="lang-separator">/</span>
+                <button data-lang="en">EN</button>
+            </li>
+            <li><a href="obras.html" class="active"><span lang="pt-br">Trabalhos selecionados</span><span lang="en">Selected works</span></a></li>
+            <li><a href="cv.html"><span lang="pt-br">Sobre</span><span lang="en">About</span></a></li>
+            <li><a href="contato.html"><span lang="pt-br">Contato</span><span lang="en">Contact</span></a></li>
         </ul>
     </nav>
 </header>
@@ -29,49 +34,49 @@
         <div class="carousel-slide active">
             <img src="assets/obras/posidon.jpg" alt="Posídon">
             <p class="carousel-caption">
-                <em>Posídon</em>, 2025. Oil on canvas — 120 x 80 cm
+                <em>Posídon</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 120 x 80 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/tres-irmas.jpg" alt="3 Irmãs">
             <p class="carousel-caption">
-                <em>3 Irmãs</em>, 2025. Oil on canvas — 90 x 60 cm
+                <em>3 Irmãs</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 90 x 60 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/agape.jpg" alt="Ágape">
             <p class="carousel-caption">
-                <em>Ágape</em>, 2025. Oil on canvas — 30 x 20 cm
+                <em>Ágape</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 30 x 20 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/afano.jpg" alt="Afano">
             <p class="carousel-caption">
-                <em>Afano</em>, 2025. Oil on canvas — 30 x 30 cm
+                <em>Afano</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 30 x 30 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/cortejo.jpg" alt="Cortejo">
             <p class="carousel-caption">
-                <em>Cortejo</em>, 2025. Oil on canvas — 30 x 20 cm
+                <em>Cortejo</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 30 x 20 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/epopeia.jpg" alt="Epopeia">
             <p class="carousel-caption">
-                <em>Epopeia</em>, 2025. Oil on canvas — 20 x 30 cm
+                <em>Epopeia</em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span> — 20 x 30 cm
             </p>
         </div>
 
         <div class="carousel-slide">
             <img src="assets/obras/obra-4.jpg" alt="Sem título">
             <p class="carousel-caption">
-                <em>Untitled</em>, 2025. Oil on canvas
+                <em><span lang="pt-br">Sem título</span><span lang="en">Untitled</span></em>, 2025. <span lang="pt-br">Óleo sobre tela</span><span lang="en">Oil on canvas</span>
             </p>
         </div>
 
@@ -110,6 +115,36 @@ document.addEventListener('keydown', (e) => {
         changeSlide(1);
     }
 });
+
+// Global language toggle functionality with localStorage persistence
+(function() {
+    const savedLang = localStorage.getItem('preferredLang') || 'pt-br';
+    document.body.dataset.lang = savedLang;
+
+    // Update active button state on load
+    document.querySelectorAll('.lang-toggle-header button').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === savedLang);
+    });
+
+    // Add click handlers
+    document.querySelectorAll('.lang-toggle-header button').forEach(button => {
+        button.addEventListener('click', function() {
+            const lang = this.dataset.lang;
+
+            // Update active button
+            document.querySelectorAll('.lang-toggle-header button').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            this.classList.add('active');
+
+            // Update body data attribute to toggle language display
+            document.body.dataset.lang = lang;
+
+            // Persist language preference
+            localStorage.setItem('preferredLang', lang);
+        });
+    });
+})();
 </script>
 
 </body>
