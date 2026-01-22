@@ -1,2 +1,1 @@
-# NoahScherner.github.io
-site 
+Noah Scherner - Minimalist portifolio site
